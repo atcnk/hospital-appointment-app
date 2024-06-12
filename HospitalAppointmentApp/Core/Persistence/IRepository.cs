@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Core.DataAccess
+namespace Core.Persistence
 {
     public interface IRepository<T>
     {

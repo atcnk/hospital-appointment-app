@@ -1,4 +1,4 @@
-﻿namespace Core.DataAccess
+﻿namespace Core.Persistence
 {
     public class Entity
     {
