@@ -3,7 +3,6 @@
     public class Doctor : User
     {
         public string SpecialistLevel { get; set; }
-        public string Qualifications { get; set; }
         public int YearsOfExperience { get; set; }
         public string Biography { get; set; }
         public int DepartmentId { get; set; }

@@ -1,4 +1,5 @@
 ﻿using Core.Persistence;
+using Domain.Enums;
 
 namespace Domain.Entities
 {
@@ -11,6 +12,7 @@ namespace Domain.Entities
         public string Password { get; set; }
         public DateTime BirthDate { get; set; }
         public string PhoneNumber { get; set; }
+        public City City { get; set; }
         public string Address { get; set; }
         public string PhotoUrl { get; set; }
     }

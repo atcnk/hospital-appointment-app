@@ -4,8 +4,8 @@ namespace Domain.Entities
 {
     public class Department : Entity
     {
-        public string DepartmentName { get; set; }
-        public string DepartmentDescription { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         public virtual ICollection<Doctor> Doctors { get; set; }
     }
 }
