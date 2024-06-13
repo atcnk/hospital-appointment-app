@@ -3,7 +3,7 @@ using Domain.Enums;
 
 namespace Domain.Entities
 {
-    public class Notification : Entity
+    public class Notification : Entity<int>
     {    
         public NotificationType Type { get; set; }
         public string Title { get; set; }

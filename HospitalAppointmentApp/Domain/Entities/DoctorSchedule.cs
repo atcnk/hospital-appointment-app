@@ -2,7 +2,7 @@
 
 namespace Domain.Entities
 {
-    public class DoctorSchedule : Entity
+    public class DoctorSchedule : Entity<int>
     {
         public int DoctorId { get; set; }
         public Doctor Doctor { get; set; }

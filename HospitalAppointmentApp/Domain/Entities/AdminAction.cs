@@ -3,7 +3,7 @@ using Domain.Enums;
 
 namespace Domain.Entities
 {
-    public class AdminAction : Entity
+    public class AdminAction : Entity<int>
     {
         public ActionType Type { get; set; }
         public string ActionDetails { get; set; }

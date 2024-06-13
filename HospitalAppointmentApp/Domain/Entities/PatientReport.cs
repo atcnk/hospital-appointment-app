@@ -2,7 +2,7 @@
 
 namespace Domain.Entities
 {
-    public class PatientReport : Entity
+    public class PatientReport : Entity<int>
     {
         public string Title { get; set; }
         public string Details { get; set; }

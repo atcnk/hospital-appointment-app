@@ -3,7 +3,7 @@ using Domain.Enums;
 
 namespace Domain.Entities
 {
-    public class Appointment : Entity
+    public class Appointment : Entity<int>
     {
         public AppointmentStatus Status { get; set; }
         public DateTime Date { get; set; }
