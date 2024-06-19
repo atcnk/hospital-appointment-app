@@ -8,6 +8,7 @@ namespace Core.Persistence
         Task<List<T>> GetListAsync(Expression<Func<T, bool>>? predicate = null);
         Task AddAsync(T entity);
         Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
+        Task SoftDeleteAsync(T entity);
+        Task HardDeleteAsync(T entity);
     }
 }

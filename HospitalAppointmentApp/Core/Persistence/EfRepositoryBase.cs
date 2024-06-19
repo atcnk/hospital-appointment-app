@@ -20,7 +20,14 @@ namespace Core.Persistence
             Context.SaveChanges();
         }
 
-        public void Delete(TEntity entity)
+        public void SoftDelete(TEntity entity)
+        {
+            entity.IsDeleted = true;
+            Context.Update(entity);
+            Context.SaveChanges();
+        }
+
+        public void HardDelete(TEntity entity)
         {
             Context.Remove(entity);
             Context.SaveChanges();
@@ -78,7 +85,14 @@ namespace Core.Persistence
             await Context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(TEntity entity)
+        public async Task SoftDeleteAsync(TEntity entity)
+        {
+            entity.IsDeleted = true;
+            Context.Update(entity);
+            await Context.SaveChangesAsync();
+        }
+
+        public async Task HardDeleteAsync(TEntity entity)
         {
             Context.Remove(entity);
             await Context.SaveChangesAsync();
