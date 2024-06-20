@@ -6,7 +6,7 @@ namespace Application.Features.DoctorSchedules.Commands.Create
     {
         public CreateDoctorScheduleValidator()
         {
-            RuleFor(ds => ds.AvailableDate).NotEmpty().WithMessage("Available date cannot be empty.")
+            RuleFor(ds => ds.AvailableDate).NotEmpty().WithMessage("Available date cannot be empty.");
         }
     }
 }
